@@ -25,3 +25,18 @@ const Details = ({ navigation, screenProps }) => (
     />
   </SafeAreaView>
 );
+
+const MainAppStack = createStackNavigator({
+  Home: {
+    screen: Home,
+    navigationOptions: {
+      title: 'Home',
+    },
+  },
+  Details: {
+    screen: Details,
+    navigationOptions: {
+      title: 'Details',
+    },
+  },
+});

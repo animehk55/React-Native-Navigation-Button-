@@ -15,3 +15,13 @@ const Home = ({ navigation, screenProps }) => (
     />
   </SafeAreaView>
 );
+
+const Details = ({ navigation, screenProps }) => (
+  <SafeAreaView>
+    <Button
+      title="Go to modal"
+      // onPress={() => null}
+      onPress={() => screenProps.changeModalVisibility(true)}
+    />
+  </SafeAreaView>
+);
